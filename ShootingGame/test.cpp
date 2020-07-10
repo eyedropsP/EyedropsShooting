@@ -3,6 +3,7 @@
 
 #define WINDOW_WIDTH  720
 #define WINDOW_HEIGHT 480
+#define AAA 10
 
 LRESULT CALLBACK    WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
 #define CLASS_NAME  "CLASS TEST01"
@@ -37,17 +38,17 @@ int APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPreInst, LPTSTR lpCmdLine
 		(LONG)(WINDOW_HEIGHT)
 	};
 	AdjustWindowRect(
-		&rect,                                    // ƒNƒ‰ƒCƒAƒ“ƒg‹éŒ`
-		WS_OVERLAPPED | WS_SYSMENU | WS_CAPTION,  // ƒEƒBƒ“ƒhƒEƒXƒ^ƒCƒ‹
-		FALSE                                     // ƒƒjƒ…[ƒtƒ‰ƒO
+		&rect,                                    // ï¿½Nï¿½ï¿½ï¿½Cï¿½Aï¿½ï¿½ï¿½gï¿½ï¿½`
+		WS_OVERLAPPED | WS_SYSMENU | WS_CAPTION,  // ï¿½Eï¿½Bï¿½ï¿½ï¿½hï¿½Eï¿½Xï¿½^ï¿½Cï¿½ï¿½
+		FALSE                                     // ï¿½ï¿½ï¿½jï¿½ï¿½ï¿½[ï¿½tï¿½ï¿½ï¿½O
 	);
 	hwnd = CreateWindow(_T(CLASS_NAME),
 		_T(PROC_NAME),
 		WS_OVERLAPPED | WS_SYSMENU | WS_CAPTION,
 		CW_USEDEFAULT,
 		CW_USEDEFAULT,
-		rect.right - rect.left,           // ƒEƒBƒ“ƒhƒE‚Ì•
-		rect.bottom - rect.top,           // ƒEƒBƒ“ƒhƒE‚Ì‚‚³
+		rect.right - rect.left,           // ï¿½Eï¿½Bï¿½ï¿½ï¿½hï¿½Eï¿½Ì•ï¿½
+		rect.bottom - rect.top,           // ï¿½Eï¿½Bï¿½ï¿½ï¿½hï¿½Eï¿½Ìï¿½ï¿½ï¿½
 		NULL,
 		NULL,
 		hInstance,
